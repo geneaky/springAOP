@@ -15,4 +15,8 @@ public class UserRepository {
         users.add(new User(4,"dsf","1234","123123213"));
         return users;
     }
+
+    public User findById(int id){
+        return new User(1,"ssar","1234","0100020230");
+    }
 }

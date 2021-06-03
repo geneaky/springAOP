@@ -19,4 +19,8 @@ public class UserRepository {
     public User findById(int id){
         return new User(1,"ssar","1234","0100020230");
     }
+
+    public void delete() {
+        throw new IllegalArgumentException("nonono");
+    }
 }

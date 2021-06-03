@@ -1,0 +1,9 @@
+[2021-06-03 15:03:35:43198][http-nio-8080-exec-1]WARN  c.s.spring_AOP.config.BindingAdvice - com.study.spring_AOP.domain.UserController.save() = > 필드:username, 메시지:유저네임을 입력하세요.
+[2021-06-03 15:03:35:43199][http-nio-8080-exec-1]WARN  c.s.spring_AOP.config.BindingAdvice - com.study.spring_AOP.domain.UserController.save() = > 필드:password, 메시지:비밀번호가 없습니다.
+[2021-06-03 15:03:35:43199][http-nio-8080-exec-1]WARN  c.s.spring_AOP.config.BindingAdvice - com.study.spring_AOP.domain.UserController.save() = > 필드:username, 메시지:유저네임키값이 없습니다.
+[2021-06-03 15:07:18:33940][http-nio-8080-exec-2]WARN  c.s.spring_AOP.config.BindingAdvice - com.study.spring_AOP.domain.UserController.save() = > 필드:username, 메시지:유저네임을 입력하세요.
+[2021-06-03 15:07:18:33941][http-nio-8080-exec-2]WARN  c.s.spring_AOP.config.BindingAdvice - com.study.spring_AOP.domain.UserController.save() = > 필드:password, 메시지:비밀번호가 없습니다.
+[2021-06-03 15:07:18:33941][http-nio-8080-exec-2]WARN  c.s.spring_AOP.config.BindingAdvice - com.study.spring_AOP.domain.UserController.save() = > 필드:username, 메시지:유저네임키값이 없습니다.
+[2021-06-03 15:08:10:10717][http-nio-8080-exec-1]WARN  c.s.spring_AOP.config.BindingAdvice - com.study.spring_AOP.domain.UserController.save() = > 필드:username, 메시지:유저네임키값이 없습니다.
+[2021-06-03 15:08:10:10717][http-nio-8080-exec-1]WARN  c.s.spring_AOP.config.BindingAdvice - com.study.spring_AOP.domain.UserController.save() = > 필드:username, 메시지:유저네임을 입력하세요.
+[2021-06-03 15:08:10:10721][http-nio-8080-exec-1]WARN  c.s.spring_AOP.config.BindingAdvice - com.study.spring_AOP.domain.UserController.save() = > 필드:password, 메시지:비밀번호가 없습니다.

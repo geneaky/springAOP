@@ -4,9 +4,15 @@ package com.study.spring_AOP.domain;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
@@ -22,19 +28,16 @@ public class UserController {
     }
 
     @PostMapping("/user")
-    public ResponseEntity<String> save(@RequestBody User user){
-//        System.out.println("save");
-//        System.out.println(username);
-//        System.out.println(password);
-//        System.out.println(phone);
+    public CommonDto<?> save(@Valid @RequestBody JoinReqDto user,BindingResult bindingResult){
         System.out.println("user = " + user);
-        return new ResponseEntity<>("ok",HttpStatus.OK);
+        return new CommonDto<>(200,"ok");
     }
 
     @DeleteMapping("/user/{id}")
-    public void delete(@PathVariable int id){
+    public CommonDto delete(@PathVariable int id){
         System.out.println("delete");
-
+        userRepository.delete();
+        return new CommonDto(HttpStatus.OK.value(),null);
     }
 
     @PutMapping("/user/{id}")
@@ -44,7 +47,7 @@ public class UserController {
     }
 
     @GetMapping("/user/{id}")
-    public User findById(@PathVariable int id){
-        return userRepository.findById(id);
+    public CommonDto<User> findById(@PathVariable int id){
+        return new CommonDto<>(HttpStatus.OK.value(), userRepository.findById(id));
     }
 }
